@@ -36,3 +36,108 @@ body {
     font-size: 24px;
     color: white;
 }
+header .links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 70px;
+    background: rgba(11,10,13,0);
+    background: -moz-linear-gradient(left, rgba(11, 10, 13, 0) 0%, rgba(11, 10, 13, 0.5) 17%, rgba(11, 10, 13, 0.52) 20%, #0b0a0d 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(11, 10, 13, 0)), color-stop(17%, rgba(11, 10, 13, 0.5)), color-stop(20%, rgba(11, 10, 13, 0.52)), color-stop(100%, #0b0a0d));
+    background: -webkit-linear-gradient(left, rgba(11, 10, 13, 0) 0%, rgba(11, 10, 13, 0.5) 17%, rgba(11, 10, 13, 0.52) 20%, #0b0a0d 100%);
+    background: -o-linear-gradient(left, rgba(11, 10, 13, 0) 0%, rgba(11, 10, 13, 0.5) 17%, rgba(11, 10, 13, 0.52) 20%, #0b0a0d 100%);
+    background: -ms-linear-gradient(left, rgba(11, 10, 13, 0) 0%, rgba(11, 10, 13, 0.5) 17%, rgba(11, 10, 13, 0.52) 20%, #0b0a0d 100%);
+    background: linear-gradient(to right, rgba(11, 10, 13, 0) 0%, rgba(11, 10, 13, 0.5) 17%, rgba(11, 10, 13, 0.52) 20%, #0b0a0d 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#0b0a0d", endColorstr="#0b0a0d", GradientType=1 );
+    z-index: 20;
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding-right: 40px;
+}
+header .links a {
+    width: 50px;
+    height: 50px;
+    background: #2a2528;
+    border-radius: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 10px;
+}
+header .logo-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 70px;
+    background: #0b0a0d;
+    background: -moz-linear-gradient(left, #0b0a0d 0%, rgba(11, 10, 13, 0.51) 83%, rgba(11, 10, 13, 0.5) 84%, rgba(11, 10, 13, 0) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, #0b0a0d), color-stop(83%, rgba(11, 10, 13, 0.51)), color-stop(84%, rgba(11, 10, 13, 0.5)), color-stop(100%, rgba(11, 10, 13, 0)));
+    background: -webkit-linear-gradient(left, #0b0a0d 0%, rgba(11, 10, 13, 0.51) 83%, rgba(11, 10, 13, 0.5) 84%, rgba(11, 10, 13, 0) 100%);
+    background: -o-linear-gradient(left, #0b0a0d 0%, rgba(11, 10, 13, 0.51) 83%, rgba(11, 10, 13, 0.5) 84%, rgba(11, 10, 13, 0) 100%);
+    background: -ms-linear-gradient(left, #0b0a0d 0%, rgba(11, 10, 13, 0.51) 83%, rgba(11, 10, 13, 0.5) 84%, rgba(11, 10, 13, 0) 100%);
+    background: linear-gradient(to right, #0b0a0d 0%, rgba(11, 10, 13, 0.51) 83%, rgba(11, 10, 13, 0.5) 84%, rgba(11, 10, 13, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#0b0a0d", endColorstr="#0b0a0d", GradientType=1 );
+    z-index: 20;
+    padding-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-left: 30px;
+}
+header .logo-container .logo {
+    width: 55px;
+    height: 63px;
+    background: url(http://mu-hanoi.net/Intro/Gaion/images/logo.png) no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+}
+.logo-container .info {
+    flex: 1;
+    padding-left: 10px;
+    position: relative;
+}
+.logo-container .info .t1 {
+    color: #fff;
+    font-size: 16px;
+    padding-bottom: 3px;
+    padding-top: 13px;
+    margin: 0;
+}
+.logo-container .info .t2 {
+    color: #fff;
+    font-size: 11px;
+}
+header .links a.home::before {
+    width: 26px;
+    height: 21px;
+    background: url(http://mu-hanoi.net/Intro/Gaion/images/ic-home.png) no-repeat;
+    top: -2px;
+    content: '';
+}
+header .links a.forum::before {
+    width: 26px;
+    height: 21px;
+    background: url(http://mu-hanoi.net/Intro/Gaion/images/ic-fr.png) no-repeat;
+    top: -2px;
+    content: '';
+}
+header .links a.download::before {
+    width: 26px;
+    height: 21px;
+    background: url(http://mu-hanoi.net/Intro/Gaion/images/ic-dl.png) no-repeat;
+    top: -2px;
+    content: '';
+}
+header .links a.register::before {
+    width: 26px;
+    height: 21px;
+    background: url(http://mu-hanoi.net/Intro/Gaion/images/ic-r.png) no-repeat;
+    top: -2px;
+    content: '';
+}
