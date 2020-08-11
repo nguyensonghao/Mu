@@ -6,42 +6,33 @@ body {
 #header-background {
     width: 100%;
 }
-#form-receive-noti {
-    background: url("../images/bg-form.png") top left no-repeat;;
-    width: 583px;
-    height: 577px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+#event-container {
+    background: url("../images/background.png") top left no-repeat;
+    height: 1000px;
 }
-#form-receive-noti label {
-    color: #ffda00;
-    font-size: 22px;
-    margin-bottom: 20px;
+#event-container table {
+    color: #e8e8e8;
+    border-collapse: collapse;
 }
-#form-receive-noti input {
-    padding: 5px 10px;
-    height: 42px;
-    border: 2px solid #54462e;
-    font-size: 16px;
-    background: #3f3118;
-    outline: none;
-    color: #ffda00;
-    width: 330px;
-    border-radius: 4px;
+#event-container table thead {
+    background: url("../images/table-header.png") top left no-repeat;
+    color: #eade47;
+    font-weight: 500;
 }
-#form-receive-noti button {
-    display: block;
-    float: none;
-    width: 160px;
-    height: 53px;
-    line-height: 53px;
-    margin: 30px auto 0 auto;
-    font-size: 20px;
-    text-transform: uppercase;
-    color: #caa66d;
-    background: url(../images/btn.png) top left no-repeat;
-    border: 0;
-    cursor: pointer;
+#event-container table thead th {
+    font-weight: 400;
+}
+.list-event {
+    position: absolute;
+    right: 50px;
+    top: 150px;
+}
+#event-container table td, #event-container table th {
+    border: 1px solid #46321829;
+    padding: 15px 20px;
+}
+.list-event .event-title {
+    text-align: center;
+    font-size: 24px;
+    color: white;
 }
