@@ -6,7 +6,30 @@ body {
 #header-background {
     width: 100%;
 }
+#intro-container {
+    background: url("../images/background.png") top left no-repeat;
+    height: 1000px;
+}
+#intro-container #start-date-container {
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    display: flex;
+}
+.btn-start-now {
+    background: url("../images/btn-start-now.gif");
+    width: 220px;
+    height: 120px;
+    background-size: cover;
+    position: fixed;
+    bottom: 60px;
+    right: 60px;
+}
 #event-container {
+    position: relative;
     background: url("../images/background.png") top left no-repeat;
     height: 1000px;
 }
