@@ -17,16 +17,82 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
     font-size: 24px;
+    text-align: center;
+}
+#intro-container #start-date-container .skull-image {
+    opacity: 0.7;
+    height: 320px;
+}
+#intro-container #start-date-container .start-date {
+    text-align: center;
+    background: url(../images/date-bg.png) no-repeat;
+    width: 500px;
+    height: 140px;
+    background-size: contain;
+}
+#intro-container #start-date-container .start-date .timer {
     display: flex;
+    width: 100%;
+    padding-top: 26px;
+}
+.timer .item {
+    flex: 1;
+    margin-right: 20px;
+}
+.timer .item.hour {
+    padding-top: 8px;
+    padding-left: 3px;
+}
+.timer .item.hour .date, .timer .item.hour .time {
+    padding-left: 7px;
+}
+.timer .item.day {
+    padding-top: 10px;
+    padding-left: 9px;
+}
+.timer .item.day .date, .timer .item.day .time {
+    margin-left: 14px;
+}
+.timer .item.month {
+    padding-top: 10px;
+    padding-left: 16px;
+}
+.timer .item.year .date {
+    margin-top: 10px;
+    margin-left: 24px;
+}
+.timer .item.year .time {
+    margin-left: 25px;
+}
+.timer .item p {
+    margin: 0;
+}
+.timer .item .date {
+    color: #ffdf87;
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 5px;
+    line-height: 1;
+    text-shadow: 1px 1px 5px #ff3b00
+}
+.timer .item .time {
+    color: #ffdf87;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 0px;
+    line-height: 1;
+    text-shadow: 1px 1px 5px #ff3b00;
 }
 .btn-start-now {
-    background: url("../images/btn-start-now.gif");
-    width: 220px;
-    height: 120px;
     background-size: cover;
     position: fixed;
     bottom: 60px;
     right: 60px;
+}
+.btn-start-now img {
+    height: 90px;
 }
 #event-container {
     position: relative;
@@ -41,18 +107,22 @@ body {
     background: url("../images/table-header.png") top left no-repeat;
     color: #eade47;
     font-weight: 500;
+    background-size: cover;
 }
 #event-container table thead th {
     font-weight: 400;
+    border: none;
 }
 .list-event {
     position: absolute;
     right: 50px;
     top: 150px;
+    width: 620px;
 }
 #event-container table td, #event-container table th {
     border: 1px solid #46321829;
-    padding: 15px 20px;
+    padding: 10px 15px;
+    font-size: 15px;
 }
 .list-event .event-title {
     text-align: center;
@@ -163,4 +233,36 @@ header .links a.register::before {
     background: url(http://mu-hanoi.net/Intro/Gaion/images/ic-r.png) no-repeat;
     top: -2px;
     content: '';
+}
+.txt-new {
+    color: #fb3131;
+}
+.txt-warning {
+    color: #eade47;
+}
+.txt-red {
+    color: orangered;
+}
+.txt-green {
+    color: forestgreen;
+}
+@keyframes blink {
+    0% {
+        opacity: 0.6;
+    }
+    25% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 0.25;
+    }
+    75% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0.6;
+    }
+}
+.blink-image {
+    animation: blink normal 2s infinite ease-in-out;
 }
