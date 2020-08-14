@@ -253,11 +253,9 @@ header .links a.register::before {
 }
 .event-box .event-content {
     background: url("../images/bg-table-loop.png") repeat-y center top;
-    float: left;
-    height: 586px;
+    height: 700px;
     width: 100%;
     display: flex;
-    padding: 10px;
 }
 .event-content-left {
     width: 284px;
@@ -272,8 +270,9 @@ header .links a.register::before {
     background-position: 0 -584px;
     height: 370px;
     width: 671px;
-    background-image: url('../images/home-s9fd54132b9.png');
-    background-repeat: no-repeat
+    background-image: url("../images/home-s9fd54132b9.png");
+    background-repeat: no-repeat;
+    margin-top: 12px;
 }
 .post-menu {
     overflow: auto;
@@ -329,4 +328,35 @@ header .links a.register::before {
 }
 .event-content-left-header img {
     width: 100%;
+}
+.event-bottom {
+    background: url("../images/page-main-bot.png") no-repeat center bottom;
+    height: 130px;
+    width: 100%;
+}
+.event-content-left-menu {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px;
+}
+.event-content-left-menu li {
+    background-image: url("../images/menu.png");
+    border-radius: 6px;
+}
+.event-content-left-menu a {
+    line-height: 50px;
+    color: #c3c8cf;
+    text-indent: 25px;
+    text-shadow: rgba(255, 255, 255, 0.35) 0px 1px 0px;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    font-size: 15px;
+}
+.event-content-left-menu li .menu-dot {
+    border-radius: 2px;
+    width: 8px;
+    height: 8px;
+    background: #282f3b;
+    display: inline-block;
+    margin-right: 6px;
 }
