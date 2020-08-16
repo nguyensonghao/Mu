@@ -135,6 +135,12 @@ header .links a {
     margin-left: 31px;
     line-height: 60px;
     font-size: 18px;
+    position: relative;
+}
+header .links a img {
+    width: 58px;
+    position: absolute;
+    right: -41px;
 }
 header .logo-container {
     position: fixed;
