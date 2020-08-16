@@ -2,13 +2,14 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Roboto";
+    background: black;
 }
 #header-background {
     width: 100%;
 }
 #intro-container {
-    background: url("../images/background.png") top left no-repeat;
-    height: 1000px;
+    background: url("../images/background.jpg") top left no-repeat;
+    height: 1090px;
 }
 #intro-container #start-date-container {
     color: white;
@@ -25,7 +26,7 @@ body {
 #intro-text .new-server-title {
     width: 200px;
     position: relative;
-    left: -108px;
+    left: -177px;
     top: 13px;
     opacity: 1;
 }
@@ -39,6 +40,9 @@ body {
     width: 500px;
     height: 140px;
     background-size: contain;
+    margin-top: 25px;
+    opacity: 0.9;
+    margin-left: 40px;
 }
 #intro-container #start-date-container .start-date .timer {
     display: flex;
@@ -126,16 +130,11 @@ header .links {
     padding-right: 40px;
 }
 header .links a {
-    width: 50px;
-    height: 50px;
-    background: #2a2528;
-    border-radius: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0 10px;
+    color: white;
+    display: inline-block;
+    margin-left: 31px;
+    line-height: 60px;
+    font-size: 18px;
 }
 header .logo-container {
     position: fixed;
@@ -246,7 +245,7 @@ header .links a.register::before {
     margin: 0 auto;
     padding: 135px 5px 0;
     position: absolute;
-    top: -174px;
+    top: -242px;
     left: 50%;
     margin-left: -495px;
 }
@@ -319,14 +318,16 @@ header .links a.register::before {
 }
 #event-container {
     position: relative;
-    background: url("../images/background.png") top left no-repeat;
-    height: 1000px;
+    background: url("../images/content.jpg") top left no-repeat;
+    height: 870px;
 }
 .hotro {
     width: 100%;
 }
 .event-content-left-header img {
-    width: 100%;
+    width: 341px;
+    position: absolute;
+    left: -14px;
 }
 .event-bottom {
     background: url("../images/page-main-bot.png") no-repeat center bottom;
@@ -334,6 +335,7 @@ header .links a.register::before {
     width: 100%;
 }
 .event-content-left-menu {
+    margin-top: 179px;
     list-style: none;
     padding: 0;
     margin-bottom: 10px;
