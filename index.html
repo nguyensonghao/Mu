@@ -22,20 +22,23 @@
                 <div class="logo"></div>
                 <div class="info">
                     <p class="t1">MU Thiên Long</p>
-                    <p class="t2">Tượng đài MU Online Số 1 Việt Nam</p>
+                    <p class="t2">Đem đến cho bạn những trải nghiệm như ngày đầu</p>
                 </div>
             </div>
             <div class="links">
-                <a>Tải game</a>
-                <a>Đăng ký</a>
-                <a>Diễn đàn</a>
-                <a>
+                <a href="#">Tải game</a>
+                <a href="#">Đăng ký</a>
+                <a href="#">Diễn đàn</a>
+                <a href="#">
                     Sự kiện
                     <img src="public/images/hot.gif" alt="Sự kiện"/>
                 </a>
             </div>
         </header>
         <div id="intro-container">
+            <video class="video-background" controls autoplay>
+                <source src="public/images/background.mp4" type="video/mp4">
+            </video>
             <div id="start-date-container">
                 <div id="intro-text">
                     <img class="new-server-title" alt="Máy chủ" src="public/images/maychu.png"/><br/>
@@ -81,7 +84,7 @@
                             <li>
                                 <a>
                                     <span class="menu-dot"></span>
-                                    Gift Code
+                                    Nhận Gift Code
                                 </a>
                             </li>
                             <li>
@@ -100,17 +103,29 @@
                         </div>
                         <div class="post-container">
                             <div class="post-menu">
-                                <div class="post-menu-item active">
+                                <div class="post-menu-item active" id="tab-1">
                                     <a>Thông tin máy chủ</a>
                                 </div>
-                                <div class="post-menu-item">
+                                <div class="post-menu-item" id="tab-2">
                                     <a>Sự kiện</a>
                                 </div>
-                                <div class="post-menu-item">
-                                    <a>Hướng dẫn</a>
+                                <div class="post-menu-item" id="tab-3">
+                                    <a>Quà tặng tân thủ</a>
                                 </div>
                             </div>
-                            <div class="post-content">
+                            <div class="post-content" control-by="tab-1">
+                                <ul class="server-info">
+                                    <li>EXP: 100x</li>
+                                    <li>Tỉ Lệ Drop: 20%</li>
+                                    <li>Phiên Bản: Season 6.9 Premium</li>
+                                    <li>Giới Hạn Reset: 3 lần/ngày</li>
+                                    <li>Train Quái Drop Ngọc: Tất cả các Map(All Sub)</li>
+                                    <li class="txt-warning">Antihack: Chống Hack 99%(Block Triệt Để)</li>
+                                    <li>Alpha Test: 13h00 06/06/2020<span class="txt-new">(Có xóa nhân vật)</span></li>
+                                    <li class="txt-warning">Open Beta: 13h00 13/06/2020</li>
+                                </ul>
+                            </div>
+                            <div class="post-content" control-by="tab-2">
                                 <ul class="list-event">
                                     <li class="event-item">
                                         <p>Khai Mở Event Vua Nạp Đợt 3  OPEN BETA - Tarkan 4</p>
@@ -150,6 +165,7 @@
                                     </li>
                                 </ul>
                             </div>
+                            <div class="post-content" control-by="tab-3"></div>
                             <div class="copy-right">
                                 <p>Copyright ©2019 MUVIET.COM</p>
                                 <p>Game phát hành từ 2003 được vận hành bởi Team MU Việt</p>
@@ -165,4 +181,6 @@
             <img src="public/images/btn-start-now.gif" alt="Chơi ngay"/>
         </div>
     </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="public/js/app.js"></script>
 </html>
